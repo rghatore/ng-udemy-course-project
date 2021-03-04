@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() showFeature = new EventEmitter<string>();
+  open: boolean = false;
 
   constructor() { }
 
