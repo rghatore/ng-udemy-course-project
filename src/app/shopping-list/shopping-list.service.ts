@@ -23,4 +23,9 @@ export class ShoppingListService {
     this.ingredients.push(ingredient);
     this.updateIngredient.emit('update'); // or just send the ingredients array
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+    this.ingredients.push(...ingredients);
+    this.updateIngredient.emit('update');
+  }
 }
